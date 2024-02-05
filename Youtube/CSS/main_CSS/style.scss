@@ -1,0 +1,132 @@
+$list-item-color: rgba(255,255,255,0.1);
+
+#main-content {
+    .list-group-item {
+        padding: 5px 12px;
+        border-radius: .5rem;
+        text-wrap: nowrap;
+        background: $list-item-color;
+        transition: background 100ms linear;
+
+        &:hover{
+            background: rgba($list-item-color, 0.3);
+        }
+    }
+
+    .slider {
+        max-height: 100px;
+        max-width: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+        // -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+        // mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+
+        &:hover{
+            .slider-btn{
+                display: block !important;
+            }
+        }
+
+
+        .slider-content {
+
+            .list-group {
+                padding-inline: 30px;
+                transition: transform 100ms linear;
+                .list-group-item{
+                    padding: 0;
+
+                    .list-link{
+                        display: block;
+                        padding: 5px 20px;
+                    }
+                }
+            }
+
+            .slider-btn {
+                position: absolute;
+                z-index: 1;
+                background: rgba($color: #000000, $alpha: .5);
+                width: 30px;
+                height: 70%;
+
+                &:last-child {
+                    right: 0;
+                }
+            }
+
+        }
+    }
+
+    #videos-section{
+        .card{
+            cursor: pointer;
+
+            .video{
+                border-radius: .5rem !important;
+                transition: border-radius 100ms linear;
+            }
+
+            &:hover .video{
+                border-radius: 0 !important;
+            }
+
+            .card-body{
+                .dot{
+                    opacity: 0;
+                }
+                &:hover{
+                    .dot{
+                        opacity: 1;
+                    }
+                }
+
+                .card-text{
+                    .content-info{
+                        opacity: .5;
+                    }
+                }
+
+                .card-link{
+                    .link{
+                        position: relative;
+                        opacity: .5;
+                        &:hover{
+                            opacity: 1;
+                        }
+
+                        &::before{
+                            content: "Name Surname";
+                            position: absolute;
+                            background: rgba(#696969, $alpha: .9);
+                            top: 0;
+                            left: 0;
+                            padding-inline: 5px;
+                            text-align: center;
+                            border-radius: .3rem;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: opacity 150ms linear;
+                            text-wrap: nowrap;
+                        }
+
+                        &:hover::before{
+                            top: -50px;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    .tick{
+                        opacity: .5;
+                    }
+            
+                }
+
+            }
+        }
+    }
+
+
+
+}

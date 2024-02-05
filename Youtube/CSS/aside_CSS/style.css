@@ -1,0 +1,48 @@
+#content {
+  margin-top: 64px;
+}
+#content #aside {
+  height: 100vh;
+  background: #000;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
+#content #aside:hover {
+  overflow-y: scroll;
+}
+#content #aside .list-group .list-group-item {
+  background: transparent;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+#content #aside .list-group .list-group-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+#content #aside .list-group .list-group-item .link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggleSidebar #aside {
+  overflow-y: scroll !important;
+  width: 100px !important;
+}
+.toggleSidebar #aside .list-group-item {
+  margin-bottom: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+.toggleSidebar #aside .link {
+  padding: 10px 20px;
+}
+.toggleSidebar #aside .link span {
+  display: none;
+}
+.toggleSidebar #aside .kesfet-title {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+#main-content .list-group-item {
+  padding: 5px 12px;
+  border-radius: 0.5rem;
+  text-wrap: nowrap;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 100ms linear;
+}
+#main-content .list-group-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+#main-content .slider {
+  max-height: 100px;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+#main-content .slider:hover .slider-btn {
+  display: block !important;
+}
+#main-content .slider .slider-content .list-group {
+  padding-inline: 30px;
+  transition: transform 100ms linear;
+}
+#main-content .slider .slider-content .list-group .list-group-item {
+  padding: 0;
+}
+#main-content .slider .slider-content .list-group .list-group-item .list-link {
+  display: block;
+  padding: 5px 20px;
+}
+#main-content .slider .slider-content .slider-btn {
+  position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  width: 30px;
+  height: 70%;
+}
+#main-content .slider .slider-content .slider-btn:last-child {
+  right: 0;
+}
+#main-content #videos-section .card {
+  cursor: pointer;
+}
+#main-content #videos-section .card .video {
+  border-radius: 0.5rem !important;
+  transition: border-radius 100ms linear;
+}
+#main-content #videos-section .card:hover .video {
+  border-radius: 0 !important;
+}
+#main-content #videos-section .card .card-body .dot {
+  opacity: 0;
+}
+#main-content #videos-section .card .card-body:hover .dot {
+  opacity: 1;
+}
+#main-content #videos-section .card .card-body .card-text .content-info {
+  opacity: 0.5;
+}
+#main-content #videos-section .card .card-body .card-link .link {
+  position: relative;
+  opacity: 0.5;
+}
+#main-content #videos-section .card .card-body .card-link .link:hover {
+  opacity: 1;
+}
+#main-content #videos-section .card .card-body .card-link .link::before {
+  content: "Name Surname";
+  position: absolute;
+  background: rgba(105, 105, 105, 0.9);
+  top: 0;
+  left: 0;
+  padding-inline: 5px;
+  text-align: center;
+  border-radius: 0.3rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 150ms linear;
+  text-wrap: nowrap;
+}
+#main-content #videos-section .card .card-body .card-link .link:hover::before {
+  top: -50px;
+  opacity: 1;
+  visibility: visible;
+}
+#main-content #videos-section .card .card-body .card-link .tick {
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */

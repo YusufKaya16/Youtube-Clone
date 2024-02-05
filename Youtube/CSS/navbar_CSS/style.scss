@@ -1,0 +1,65 @@
+$dark-color: #000;
+$light-color: #fff;
+
+.navbar {
+    min-height: 56px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+
+    .brand-container {
+        vertical-align: middle;
+    }
+
+    .navbar-brand {
+        font-weight: 700 !important;
+
+        .sup-text {
+            font-size: .5em;
+            font-weight: 100;
+        }
+    }
+
+    .icon-btn {
+        padding: 8px;
+        border-radius: 100%;
+
+        &:hover {
+            background: rgba($light-color, $alpha: .2) !important;
+        }
+    }
+
+    #form {
+        .input-group {
+            width: 90%;
+        }
+    }
+
+    .right-container {
+        .btn {
+            padding: 6px !important;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+
+            &:hover {
+                background: rgba($light-color, $alpha: .2) !important;
+            }
+        }
+
+        .profile-btn {
+            width: 40px;
+            height: 40px;
+
+            &:focus {
+                border: 1px solid blue !important;
+            }
+        }
+    }
+}
+
+.navbar-dark-background {
+    background-color: $dark-color;
+}

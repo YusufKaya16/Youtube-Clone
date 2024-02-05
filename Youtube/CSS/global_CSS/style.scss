@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/youtube-sans');
+
+$dark-color: #000;
+
+body {
+    // font-family: 'YouTube Sans', sans-serif;
+    font-family: 'YouTube Sans Dark', sans-serif;
+    background: $dark-color;
+}
